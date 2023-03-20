@@ -1,0 +1,22 @@
+{
+  "folders": [
+    {
+      "path": ".."
+    },
+    {
+      "path": "../../responsive-images-and-svg-avalon-porter/styles"
+    },
+    {
+      "path": "../../responsive-images-and-svg-avalon-porter/images"
+    },
+    {
+      "path": "../../responsive-images-and-svg-avalon-porter/about"
+    },
+    {
+      "path": "../../responsive-images-and-svg-avalon-porter/contact"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "css-fonts-and-a-button-avalon-porter"
+  }
+}

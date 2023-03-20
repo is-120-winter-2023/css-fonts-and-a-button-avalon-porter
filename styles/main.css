@@ -1,0 +1,128 @@
+/*****************************************************/
+/* This semester we will be using my variation of    */
+/* Josh Comeau's CSS Reset instead of normalize      */
+/* Read more at                                      */
+/* https://www.joshwcomeau.com/css/custom-css-reset/ */
+/*****************************************************/
+/* Always add your CSS below the reset CSS           */
+/*****************************************************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  /* margin: 0; */
+  /* this an experimental line-height; if it breaks, add line-height: 1.5 to body */
+  line-height: calc(1em + 0.5rem);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* until you get a feel for overflow, I'll keep these next two commented out */
+/* p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+} */
+
+/* p {
+  overflow-wrap: break-word;
+  hyphens: auto;
+} */
+
+/* temp CSS for HTML only assignments */
+picture img {
+  width: 100%;
+}
+
+svg {
+  width: 200px;
+}
+
+/* temp fix to size about img */
+img[srcset] {
+  width: 50%;
+  height: auto;
+  margin: 2rem auto;
+}
+
+/* temporary fix to size svg images */
+img[src$="svg"] {
+  width: 200px;
+}
+
+/************ add your CSS here *****************/
+
+:root {
+  --color-font: #000000; /* black */
+  --color-primary: #ffb6c1; /* light pink */
+  --color-secondary: #90ee90; /* light green */
+  --color-accent: #696969; /* dark gray */
+  --color-accent-light: #84c9f1; /* light gray */
+}
+
+h1 {
+  color: var(--color-primary); /* use the --color-accent variable */
+  font-family: "Climate Crisis", sans-serif; /* add a fallback font */
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+  margin-top: 1.5em;
+}
+
+p {
+  color: var(--color-accent);
+  font-family: "monospace", sans-serif;
+  font-size: 20px;
+  font-weight: 400; /* use a specific font weight */
+  margin-bottom: 0.5em;
+  margin-top: 1.5em;
+}
+
+body {
+  color: var(--color-accent-light);
+  font-family: "georgia", sans-serif; /* add a fallback font */
+  font-weight: 400; /* use a normal font weight */
+  margin-bottom: 0.5em;
+  margin-top: 1.5em;
+}
+
+header {
+  color: var(--color-font);
+  font-family: "georgia", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+  margin-top: 1.5em;
+}
