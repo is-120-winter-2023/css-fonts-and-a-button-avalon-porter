@@ -92,37 +92,109 @@ img[src$="svg"] {
   --color-accent-light: #84c9f1; /* light gray */
 }
 
+header {
+  color: var(--color-font);
+  font-family: "georgia", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1 {
   color: var(--color-primary); /* use the --color-accent variable */
   font-family: "Climate Crisis", sans-serif; /* add a fallback font */
-  font-size: 40px;
+  font-size: 3.5rem;
   font-weight: 400;
-  margin-bottom: 0.5em;
+  margin-bottom: 1.5em;
   margin-top: 1.5em;
 }
 
-p {
-  color: var(--color-accent);
-  font-family: "monospace", sans-serif;
-  font-size: 20px;
-  font-weight: 400; /* use a specific font weight */
-  margin-bottom: 0.5em;
+h2 {
+  color: var(--color-secondary); /* use the --color-accent variable */
+  font-family: "Climate Crisis", sans-serif; /* add a fallback font */
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1.5em;
   margin-top: 1.5em;
 }
 
 body {
-  color: var(--color-accent-light);
+  color: var(--color-accent);
   font-family: "georgia", sans-serif; /* add a fallback font */
+  font-size: 1rem;
   font-weight: 400; /* use a normal font weight */
-  margin-bottom: 0.5em;
-  margin-top: 1.5em;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
-header {
-  color: var(--color-font);
+p {
+  color: var(--color-accent);
   font-family: "georgia", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 0.5em;
-  margin-top: 1.5em;
+  font-size: 1rem;
+  font-weight: 400; /* use a specific font weight */
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+article {
+  margin-bottom: 1em;
+}
+
+aside {
+  margin-bottom: 1em;
+}
+
+header,
+h1,
+h2,
+body,
+p,
+aside,
+article,
+aside,
+footer,
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 rem;
+  max-width: 50rem;
+}
+
+footer {
+  font-family: "monospace," sans-serif;
+  font-size: 0.5rem;
+  max-width: 50rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.button {
+  border: 1px solid var(--color-secondary);
+  color: var(--color-secondary);
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  transition: background-color 300ms ease, color 300ms ease;
+}
+
+.button:hover {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+a.button:hover {
+  background-color: var(--color-primary);
+  color: #fff;
 }

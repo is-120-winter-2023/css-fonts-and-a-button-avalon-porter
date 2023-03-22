@@ -17,6 +17,7 @@
     }
   ],
   "settings": {
-    "liveServer.settings.multiRootWorkspaceName": "css-fonts-and-a-button-avalon-porter"
+    "liveServer.settings.multiRootWorkspaceName": "css-fonts-and-a-button-avalon-porter",
+    "liveServer.settings.port": 5501
   }
 }
