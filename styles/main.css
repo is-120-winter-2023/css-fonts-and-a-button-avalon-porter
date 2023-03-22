@@ -168,6 +168,15 @@ main {
   max-width: 50rem;
 }
 
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+a.href:hover {
+  background-color: var(--color-secondary);
+}
+
 footer {
   font-family: "monospace," sans-serif;
   font-size: 0.5rem;
