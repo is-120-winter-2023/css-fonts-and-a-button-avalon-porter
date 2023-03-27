@@ -83,7 +83,7 @@ img[src$="svg"] {
 }
 
 /************ add your CSS here *****************/
-
+/***** General element styles *****/
 :root {
   --color-font: #000000; /* black */
   --color-primary: #ffb6c1; /* light pink */
@@ -92,10 +92,17 @@ img[src$="svg"] {
   --color-accent-light: #84c9f1; /* light gray */
 }
 
-header {
-  color: var(--color-font);
+body {
   font-family: "georgia", sans-serif;
-  font-size: 1.5rem;
+  color: var(--color-accent);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-primary);
+  font-family: "Climate Crisis", sans-serif;
   font-weight: 400;
   margin-bottom: 1.5em;
   margin-top: 1.5em;
@@ -105,89 +112,57 @@ header {
 }
 
 h1 {
-  color: var(--color-primary); /* use the --color-accent variable */
-  font-family: "Climate Crisis", sans-serif; /* add a fallback font */
   font-size: 3.5rem;
-  font-weight: 400;
-  margin-bottom: 1.5em;
-  margin-top: 1.5em;
 }
 
 h2 {
-  color: var(--color-secondary); /* use the --color-accent variable */
-  font-family: "Climate Crisis", sans-serif; /* add a fallback font */
-  padding-top: 3rem;
-  padding-bottom: 1rem;
-  font-size: 2rem;
-  font-weight: 400;
-  margin-bottom: 1.5em;
-  margin-top: 1.5em;
+  font-size: 2.5rem;
 }
 
-body {
-  color: var(--color-accent);
-  font-family: "georgia", sans-serif; /* add a fallback font */
-  font-size: 1rem;
-  font-weight: 400; /* use a normal font weight */
-  margin-bottom: 1em;
-  margin-top: 1em;
+h3 {
+  font-size: 2rem;
 }
 
 p {
-  color: var(--color-accent);
-  font-family: "georgia", sans-serif;
-  font-size: 1rem;
-  font-weight: 400; /* use a specific font weight */
-  margin-bottom: 1em;
-  margin-top: 1em;
-}
-
-article {
-  margin-bottom: 1em;
-}
-
-aside {
-  margin-bottom: 1em;
-}
-
-header,
-h1,
-h2,
-body,
-p,
-aside,
-article,
-aside,
-footer,
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-  padding: 0 rem;
-  max-width: 50rem;
+  margin-bottom: 1.5rem;
 }
 
 a {
   text-decoration: none;
   color: var(--color-primary);
+  font-weight: 700;
 }
 
 a[href]:hover {
-  text-decoration: underline;
+  color: var(--color-accent-light);
+}
+
+main {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 50rem;
+}
+
+article,
+aside {
+  margin-bottom: 6rem;
+}
+
+aside {
+  padding: 0 1rem;
 }
 
 footer {
-  font-family: "monospace," sans-serif;
-  font-size: 0.5rem;
-  max-width: 50rem;
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
-  padding: 0.5rem 1rem;
-  background-color: var(--color-primary);
-  color: #fff;
+  background-color: var(--color-dark-accent);
 }
 
+footer p {
+  color: rgb(191, 119, 189);
+  margin: 0;
+  padding: 3rem 1rem 6rem;
+}
+
+/***** General purpose classes *****/
 .button {
   border: 1px solid var(--color-secondary);
   color: var(--color-secondary);
@@ -195,7 +170,7 @@ footer {
   display: inline-block;
   padding: 0.5rem 1rem;
   text-transform: uppercase;
-  transition: background-color 300ms ease, color 300ms ease;
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
 }
 
 .button:hover {
@@ -203,7 +178,7 @@ footer {
   color: #fff;
 }
 
+/* need extra specificity to override the color set by a[href]:hover */
 a.button:hover {
-  background-color: var(--color-primary);
-  color: #fff;
+  color: rgb(125, 195, 131);
 }
